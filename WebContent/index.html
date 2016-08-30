@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Website</title>
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"></link>
+		<link rel="stylesheet" href="css/main.css"></link>
+	</head>
+	
+	<body ng-app="pwapp" ng-cloak class="ng-cloak body">
+		<nav class="nav navbar-inverse">
+			<img class="img__logo" src="images/logo.svg" />
+			<span class="text__nav">Logo text here</span>
+			<ul class="nav nav-pills nav-stacked">	
+				<li ui-sref-active="active"><a class="link__nav" ui-sref="home">Home</a></li>
+				<li ui-sref-active="active"><a class="link__nav" ui-sref="about">About Us</a></li>
+				<li ui-sref-active="active"><a class="link__nav" ui-sref="members">Members</a></li>
+				<li ui-sref-active="active"><a class="link__nav" ui-sref="contact">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div ui-view class="container--body"></div>
+		
+		<!-- <script src="js/libs/angular.min.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+		<script src="js/libs/angular-ui-router.min.js"></script>
+		<script src="js/libs/ui-bootstrap-tpls-2.1.1.min.js"></script>
+		
+		<script src="index.module.js"></script>
+		<script src="index.route.js"></script>
+		
+		<script src="views/home/home.controller.js"></script>
+		<script src="views/members/members.controller.js"></script>
+	</body>
+</html>

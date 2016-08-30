@@ -1,0 +1,87 @@
+body {
+  background-image: url("../images/background.png"); }
+
+.img__logo {
+  width: 200px;
+  margin: 10px auto;
+  display: block; }
+
+.img__member {
+  width: 100%; }
+
+.nav {
+  height: 100vh;
+  width: 210px;
+  display: inline-block;
+  position: fixed;
+  float: left; }
+  .nav.navbar-inverse {
+    border-radius: 0; }
+
+.text__nav {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  font-style: italic; }
+
+.nav-pills > li.active > a.link__nav {
+  background: rgba(255, 255, 255, 0.2); }
+.nav-pills > li a.link__nav {
+  color: white;
+  border-radius: 0; }
+  .nav-pills > li a.link__nav:hover {
+    background-color: black; }
+
+.container--body {
+  display: inline-block;
+  width: calc(100% - 210px);
+  margin-left: 210px; }
+
+.container__member {
+  display: inline-block;
+  width: 20%;
+  padding: 10px; }
+
+.container__images {
+  text-align: center; }
+
+.section__hero {
+  position: relative; }
+
+.wallpaper {
+  width: 100%;
+  min-height: 300px; }
+
+.wallpaper__home {
+  background: url("../images/farm.jpg") center center no-repeat; }
+
+.header {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5); }
+
+.section__text {
+  margin: 0 15px; }
+
+.section__members {
+  margin: 0 15px; }
+
+.section__header {
+  display: block;
+  width: 66%;
+  border-bottom: 2px solid black; }
+
+.text__section-header {
+  margin-bottom: 2px; }
+
+.text__paragraph {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,10 @@
+<section class="section__members">
+	<span class="section__header">
+		<h3 class="text__section-header">Members</h3>
+	</span>
+	<div class="container__images">
+		<div class="container__member" ng-repeat="participant in participants">
+			<img class="img__member" ng-src="{{participant.img}}" alt="{{participant.name}}" />
+		</div>
+	</div>
+</section>
