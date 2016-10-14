@@ -1,5 +1,5 @@
 $nav__width: 210px;
-$members-per-line: 5;
+$members-per-line: 8;
 $theme__dark-colour: #4a3f37;
 
 body {
@@ -71,7 +71,11 @@ body {
 }
 
 .container__images {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 10px 0;
 	text-align: center;
+	margin-top: 10px;
 }
 
 .section__hero {
@@ -115,6 +119,11 @@ body {
 .text__section-header {
 	color: $theme__dark-colour;
 	margin-bottom: 2px;
+}
+
+.text__subheader {
+	margin: 0;
+	font-size: 24px;
 }
 
 .text__paragraph {

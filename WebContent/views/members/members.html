@@ -1,5 +1,5 @@
 <section class="section__hero">
-	<img src="images/windmill.jpg" class="img-responsive" />
+	<img src="images/apples.jpg" class="img-responsive" />
 	<div class="header">
 		<h1 class="text__header--title">Members</h1>
 	</div>
@@ -7,8 +7,9 @@
 
 <section id="members" class="section__members">
 	<div class="container__images">
-		<div class="container__member" ng-repeat="participant in participants">
-			<img class="img__member" ng-src="{{participant.img}}" alt="{{participant.name}}" />
+		<h2 class="text__subheader">Founder Members</h2>
+		<div class="container__member" ng-repeat="founder in founders">
+			<img class="img__member" ng-src="{{founder.img}}" alt="{{founder.name}}" />
 		</div>
 	</div>
 </section>

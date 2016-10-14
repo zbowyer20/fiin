@@ -8,7 +8,7 @@
 	
 	/** @ngInject */
 	function MembersController($scope) {
-		$scope.participants = [
+		$scope.founders = [
 		    {
 		    	id: "2_sisters",
 		    	name: "2 Sisters",
@@ -74,7 +74,8 @@
 		    	name: "Aldi",
 		    	img: "images/logos/aldi.png"
 		    }
-		];		
+		];
+		$scope.members = [];
 	}
 	
 })();
