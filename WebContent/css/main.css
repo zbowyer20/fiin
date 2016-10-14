@@ -1,3 +1,9 @@
+body {
+  background-image: url("../images/background.png"); }
+  body.body--blank {
+    background-image: none;
+    background: white; }
+
 .img__logo {
   width: 200px;
   margin: 10px auto;
@@ -33,11 +39,7 @@
 .container--body {
   display: inline-block;
   width: calc(100% - 210px);
-  margin-left: 210px;
-  background-image: url("../images/background.png"); }
-  .container--body.members {
-    background-image: none;
-    background: white; }
+  margin-left: 210px; }
 
 .container__member {
   display: inline-block;

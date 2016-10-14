@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/main.css"></link>
 	</head>
 	
-	<body ng-app="pwapp" ng-cloak class="ng-cloak body">
+	<body ng-app="pwapp" ng-cloak class="ng-cloak body" ng-class="{'body--blank': $state.includes('members')}">
 		<nav class="nav navbar-inverse">
 			<img class="img__logo" src="images/logo.png" />
 			<span class="text__nav">For the industry by the industry</span>
@@ -20,7 +20,7 @@
 				<li ui-sref-active="active"><a class="link__nav" ui-sref="contact">Contact Us</a></li>
 			</ul>
 		</nav>
-		<div ui-view class="container--body" ng-class="$state.current.name"></div>
+		<div ui-view class="container--body"></div>
 		
 		<!-- <script src="js/libs/angular.min.js"></script>-->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
