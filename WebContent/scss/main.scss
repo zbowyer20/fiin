@@ -2,10 +2,6 @@ $nav__width: 210px;
 $members-per-line: 5;
 $theme__dark-colour: #4a3f37;
 
-body {
-	background-image: url("../images/background.png");
-}
-
 .img__logo {
 	width: 200px;
 	margin: 10px auto;
@@ -57,6 +53,12 @@ body {
 	display: inline-block;
 	width: calc(100% - #{$nav__width});
 	margin-left: $nav__width;
+	background-image: url("../images/background.png");
+	
+	&.members {
+		background-image: none;
+		background: white;
+	}
 }
 
 .container__member {
