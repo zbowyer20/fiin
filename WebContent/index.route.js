@@ -20,6 +20,14 @@
                 	controller: 'MembersController',
                 	controllerAs: 'members'
                 })
+                .state('about', {
+                	url: '/about.html',
+                	templateUrl: 'views/about/about.html'
+                })
+                .state('board', {
+                	url: '/board.html',
+                	templateUrl: 'views/board/board.html'
+                })
                 .state('contact', {
                 	url: '/contact',
                 	templateUrl: 'views/contact/contact.html',

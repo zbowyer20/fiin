@@ -1,7 +1,11 @@
-<section class="section__members">
-	<span class="section__header">
-		<h3 class="text__section-header">Members</h3>
-	</span>
+<section class="section__hero">
+	<img src="images/windmill.jpg" class="img-responsive" />
+	<div class="header">
+		<h1 class="text__header--title">Members</h1>
+	</div>
+</section>
+
+<section id="members" class="section__members">
 	<div class="container__images">
 		<div class="container__member" ng-repeat="participant in participants">
 			<img class="img__member" ng-src="{{participant.img}}" alt="{{participant.name}}" />
