@@ -73,6 +73,46 @@
 		    	id: "aldi",
 		    	name: "Aldi",
 		    	img: "images/logos/aldi.png"
+		    },
+		    {
+		    	id: "samworth_brothers",
+		    	name: "Samworth Brothers",
+		    	img: "images/logos/samworth_brothers.png"
+		    },
+		    {
+		    	id: "greencore",
+		    	name: "Greencore",
+		    	img: "images/logos/greencore.jpeg"
+		    },
+		    {
+		    	id: "morrisons",
+		    	name: "Morrisons",
+		    	img: "images/logos/morrisons.jpg"
+		    },
+		    {
+		    	id: "asda",
+		    	name: "ASDA",
+		    	img: "images/logos/asda.png"
+		    },
+		    {
+		    	id: "kerry_foods",
+		    	name: "Kerry Foods",
+		    	img: "images/logos/kerry.jpg"
+		    },
+		    {
+		    	id: "booker",
+		    	name: "Booker",
+		    	img: "images/logos/booker.jpg"
+		    },
+		    {
+		    	id: "youngs",
+		    	name: "Youngs",
+		    	img: "images/logos/youngs.jpg"
+		    },
+		    {
+		    	id: "moy_park",
+		    	name: "Moy Park",
+		    	img: "images/logos/moy_park.jpg"
 		    }
 		];
 		$scope.members = [];

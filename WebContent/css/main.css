@@ -43,7 +43,7 @@ body {
 
 .container__member {
   display: inline-block;
-  width: 12.5%;
+  width: 16.66667%;
   padding: 10px; }
 
 .container__images {
@@ -73,7 +73,7 @@ body {
   color: white; }
 
 .section__text {
-  margin: 0 15px; }
+  margin: 0 20px; }
 
 .section__members {
   margin: 0 15px; }
