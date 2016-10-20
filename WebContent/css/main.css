@@ -13,13 +13,48 @@ body {
   width: 100%; }
 
 .nav {
-  height: 100vh;
-  width: 210px;
-  display: inline-block;
-  position: fixed;
-  float: left; }
-  .nav.navbar-inverse {
-    border-radius: 0; }
+  height: 50px; }
+  @media screen and (min-width: 1025px) {
+    .nav {
+      height: 100vh;
+      width: 210px;
+      display: inline-block;
+      position: fixed;
+      float: left; }
+      .nav.navbar-inverse {
+        border-radius: 0; } }
+
+.menu__desktop {
+  display: none; }
+  @media screen and (min-width: 1025px) {
+    .menu__desktop {
+      display: block; } }
+
+.menu__mobile {
+  display: block; }
+  @media screen and (min-width: 1024px) {
+    .menu__mobile {
+      display: none; } }
+  .menu__mobile ul {
+    padding: 0; }
+  .menu__mobile .navbar {
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    width: 100%; }
+    .menu__mobile .navbar .link__nav {
+      display: block;
+      padding: 5px 10px; }
+
+.navbar {
+  border-radius: 0;
+  border: none; }
+
+.navbar-toggle {
+  display: block; }
+  @media (min-width: 1025px) {
+    .navbar-toggle {
+      display: none; } }
 
 .text__nav {
   display: block;
@@ -28,23 +63,35 @@ body {
   color: white;
   font-style: italic; }
 
-.nav-pills > li.active > a.link__nav {
-  background: rgba(255, 255, 255, 0.2); }
-.nav-pills > li a.link__nav {
+.nav a.link__nav {
   color: white;
   border-radius: 0; }
-  .nav-pills > li a.link__nav:hover {
-    background-color: black; }
+  .nav a.link__nav:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none; }
+
+.nav-pills > li.active > a.link__nav {
+  background: rgba(255, 255, 255, 0.2); }
 
 .container--body {
-  display: inline-block;
-  width: calc(100% - 210px);
-  margin-left: 210px; }
+  display: block; }
+  @media (min-width: 1025px) {
+    .container--body {
+      display: inline-block;
+      width: calc(100% - 210px);
+      margin-left: 210px; } }
 
 .container__member {
   display: inline-block;
-  width: 16.66667%;
+  width: 33.33333%;
   padding: 10px; }
+  @media (min-width: 767px) {
+    .container__member {
+      width: 25%; } }
+  @media (min-width: 1025px) {
+    .container__member {
+      width: 16.66667%; } }
 
 .container__images {
   border-top: 2px solid black;

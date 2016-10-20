@@ -10,15 +10,34 @@
 	
 	<body ng-app="pwapp" ng-cloak class="ng-cloak body" ng-class="{'body--blank': $state.includes('members')}">
 		<nav class="nav navbar-inverse">
-			<img class="img__logo" src="images/logo.png" />
-			<span class="text__nav">For the industry by the industry</span>
-			<ul class="nav nav-pills nav-stacked">	
-				<li ui-sref-active="active"><a class="link__nav" ui-sref="home">Home</a></li>
-				<li ui-sref-active="active"><a class="link__nav" ui-sref="members">Members</a></li>
-				<li ui-sref-active="active"><a class="link__nav" ui-sref="about">About Us</a></li>
-				<li ui-sref-active="active"><a class="link__nav" ui-sref="board">Board</a></li>
-				<li ui-sref-active="active"><a class="link__nav" ui-sref="contact">Contact Us</a></li>
-			</ul>
+			<div class="menu__desktop">
+				<img class="img__logo" src="images/logo.png" />
+				<span class="text__nav">For the industry by the industry</span>
+				<ul class="nav nav-pills nav-stacked">	
+					<li ui-sref-active="active"><a class="link__nav" ui-sref="home">Home</a></li>
+					<li ui-sref-active="active"><a class="link__nav" ui-sref="members">Members</a></li>
+					<li ui-sref-active="active"><a class="link__nav" ui-sref="about">About Us</a></li>
+					<li ui-sref-active="active"><a class="link__nav" ui-sref="board">Board</a></li>
+					<li ui-sref-active="active"><a class="link__nav" ui-sref="contact">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="menu__mobile">
+				<button type="button" class="navbar-toggle" ng-init="collapsed = true" ng-click="collapsed = !collapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar navbar-inverse" ng-show="!collapsed">
+					<ul>
+						<li ui-sref-active="active"><a class="link__nav" ui-sref="home" ng-click="collapsed = true">Home</a></li>
+						<li ui-sref-active="active"><a class="link__nav" ui-sref="members" ng-click="collapsed = true">Members</a></li>
+						<li ui-sref-active="active"><a class="link__nav" ui-sref="about" ng-click="collapsed = true">About Us</a></li>
+						<li ui-sref-active="active"><a class="link__nav" ui-sref="board" ng-click="collapsed = true">Board</a></li>
+						<li ui-sref-active="active"><a class="link__nav" ui-sref="contact" ng-click="collapsed = true">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 		<div ui-view class="container--body"></div>
 		

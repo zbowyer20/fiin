@@ -1,5 +1,7 @@
 $nav__width: 210px;
-$members-per-line: 6;
+$members-per-line--mobile: 3;
+$members-per-line--tablet: 4;
+$members-per-line--desktop: 6;
 $theme__dark-colour: #4a3f37;
 
 body {
@@ -22,14 +24,59 @@ body {
 }
 
 .nav {
-	height: 100vh;
-	width: $nav__width;
-	display: inline-block;
-	position: fixed;
-	float: left;
+	height: 50px;
+	@media screen and (min-width: 1025px) {
+		height: 100vh;
+		width: $nav__width;
+		display: inline-block;
+		position: fixed;
+		float: left;
+		
+		&.navbar-inverse {
+			border-radius: 0;
+		}
+	}
+}
+
+.menu__desktop {
+	display: none;
+	@media screen and (min-width: 1025px) {
+		display: block;
+	}
+}
+
+.menu__mobile {
+	display: block;
+	@media screen and (min-width: 1024px) {
+		display: none;
+	}
 	
-	&.navbar-inverse {
-		border-radius: 0;
+	ul {
+		padding: 0;
+	}
+	
+	.navbar {
+		position: absolute;
+		top: 50px;
+		z-index: 1;
+		width: 100%;
+		
+		.link__nav {
+			display: block;
+			padding: 5px 10px;
+		}
+	}
+}
+
+.navbar {
+	border-radius: 0;
+	border: none;
+}
+
+.navbar-toggle {
+	display: block;
+	@media (min-width: 1025px) {
+		display: none;
 	}
 }
 
@@ -41,33 +88,46 @@ body {
 	font-style: italic;
 }
 
+.nav a.link__nav {
+	color: white;
+	border-radius: 0;
+	&:hover {
+		background-color: black;
+		color: white;
+		text-decoration: none;
+	}
+}
+
 .nav-pills > li {
 	&.active > a {
 		&.link__nav {
 			background: rgba(255, 255, 255, 0.2);
 		}
 	}
-	
-	a.link__nav {
-		color: white;
-		border-radius: 0;
-		
-		&:hover {
-			background-color: black;
-		}
-	}
 }
 
 .container--body {
-	display: inline-block;
-	width: calc(100% - #{$nav__width});
-	margin-left: $nav__width;
+	display: block;
+	
+	@media (min-width: 1025px) {
+		display: inline-block;
+		width: calc(100% - #{$nav__width});
+		margin-left: $nav__width;
+	}
 }
 
 .container__member {
 	display: inline-block;
-	width: percentage(1/$members-per-line);
+	width: percentage(1/$members-per-line--mobile);
 	padding: 10px;
+	
+	@media (min-width: 767px) {
+		width: percentage(1/$members-per-line--tablet);
+	}
+	
+	@media (min-width: 1025px) {
+		width: percentage(1/$members-per-line--desktop);
+	}
 }
 
 .container__images {
