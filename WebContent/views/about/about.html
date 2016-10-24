@@ -7,27 +7,15 @@
 
 <section class="section__text">
 	<p class="text__paragraph">The Food Industry Intelligence Network (FIIN) is a group of food businesses (‘members’) including retailers, manufacturers and food services companies. In joining the FIIN, members agree to submit information to the FIIN administrator on the authenticity testing they have carried out over a set period of time. The information is anonymised by the administrator and used to compile a report that is circulated to FIIN members.</p>
-	<uib-accordion close-others="oneAtATime">
-	    <div uib-accordion-group class="panel-default" heading="What does the FIIN hope to achieve?">
-			FIIN members recognise that there is a need to be vigilant in order to ensure the integrity of food supply chains and to protect the interests of the consumer. All companies are carrying out their own raw material testing and validation and currently have no awareness of the extent to which other companies are testing the same supply chains. Submitting information to the FIIN operated by an independent third party gives an indication of the level of scrutiny of supply chains for different categories of raw materials. This will enable FIIN members to judge the efficacy of their testing regimes, and target their resources using the intelligence and insight from the FIIN.
-	   	</div>
-	   	<div uib-accordion-group class="panel-default" heading="How is the information submitted by companies anonymised?">
-	      	The legal firm, Eversheds LLP, carries out administration of the FIIN. Eversheds anonymise the information received from FIIN members and compile it into a report.
-	    </div>
-	    <div uib-accordion-group class="panel-default" heading="How is membership determined?">
-			The concept of the Food Industry Intelligence Network arose as a response by an industry workshop to address the recommendations of the Elliot report. The founding members of the FIIN agreed a model for membership. Companies wishing to join the FIIN can contact the FIIN administrator or any of the Board members. There is a membership fee that is scaled to the size of the business and all members are expected to contribute data into the Network.
+	
+	<div class="panel panel-default" ng-repeat="question in questions">
+		<div class="panel-heading">
+			<h4 class="panel-title" ng-click="open = open == question.id ? null : question.id">
+				{{question.question}}
+			</h4>
 		</div>
-		<div uib-accordion-group class="panel-default" heading="Can any companies join?">
-			FIIN membership is restricted to food companies including retailers, manufacturers and food service companies that operate within the UK and Ireland. Membership is accepted from SMEs through to large businesses.
+		<div class="panel-body" ng-if="open == question.id">
+			{{question.answer}}
 		</div>
-		<div uib-accordion-group class="panel-default" heading="How is the FIIN governed?">
-			FIIN has a governance board consisting of representatives of each sector of the food industry – retail, manufacture (brand and own label), food service – and the administrator. Professor Chris Elliot of Queen’s University, Belfast is a non-executive independent adviser.
-		</div>
-		<div uib-accordion-group class="panel-default" heading="How does the FIIN comply with competition law?">
-			The FIIN operates within the competition law. There is a legal adviser present at all FIIN meetings and Board meetings to ensure that there are no breaches of competition law. No attributable data are shared amongst FIIN members. All information is anonymised by the administrator before distribution in report form to FIIN members. No information that is traceable back to source is included in the report.
-		</div>
-		<div uib-accordion-group class="panel-default" heading="Does the FIIN share information with the government?">
-			Members of the FIIN Board have met with the Food Standards Agencies of England, Ireland and Scotland, including the National Food Crime Unit (NFCU). All agencies are aware of the FIIN and supportive of its purpose. The Board will continue to meet with the food agencies to determine how they can best work together in the interests of the consumer.
-		</div>
-	</uib-accordion>
+	</div>
 </section>

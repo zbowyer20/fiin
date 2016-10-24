@@ -4,8 +4,14 @@ $members-per-line--tablet: 4;
 $members-per-line--desktop: 6;
 $theme__dark-colour: #4a3f37;
 
+html {
+	-webkit-text-size-adjust: auto;
+	-ms-text-size-adjust: auto;
+}
+
 body {
 	background-image: url("../images/background.png");
+	font-size: 14px;
 	
 	&.body--blank {
 		background-image: none;
@@ -24,7 +30,14 @@ body {
 }
 
 .nav {
-	height: 50px;
+	height: 170px;
+	
+	.navbar-toggle .icon-bar {
+		width: 165px;
+		margin-bottom: 30px;
+		height: 15px;
+	}
+	
 	@media screen and (min-width: 1025px) {
 		height: 100vh;
 		width: $nav__width;
@@ -57,13 +70,14 @@ body {
 	
 	.navbar {
 		position: absolute;
-		top: 50px;
+		top: 170px;
 		z-index: 1;
 		width: 100%;
 		
 		.link__nav {
 			display: block;
-			padding: 5px 10px;
+			padding: 20px;
+			font-size: 40px;
 		}
 	}
 }
@@ -158,8 +172,13 @@ body {
 }
 
 .text__header--title {
+	font-size: 48px;
 	margin: 20px;
 	color: white;
+	
+	@media (min-width: 1025px) {
+		font-size: 48px;
+	}
 }
 
 .section__text {
@@ -183,16 +202,30 @@ body {
 
 .text__subheader {
 	margin: 0;
-	font-size: 24px;
+	font-size: 32px;
+	
+	@media (min-width: 1025px) {
+		font-size: 24px;
+	}
 }
 
 .text__paragraph {
-	margin: 10px 0;
-	font-size: 16px;
+	font-size: 22px;
+	margin: 25px 0;
 	line-height: 26px;
 	letter-spacing: 1px;
+	
+	@media (min-width: 1025px) {
+		margin: 10px 0;
+		font-size: 16px;
+	}
 }
 
 .text--emphasis {
 	font-weight: bold;
+}
+
+.panel-title a span {
+	font-size: 26px !important;
+	font-weight: 500;
 }

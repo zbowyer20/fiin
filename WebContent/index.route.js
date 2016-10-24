@@ -22,7 +22,9 @@
                 })
                 .state('about', {
                 	url: '/about.html',
-                	templateUrl: 'views/about/about.html'
+                	templateUrl: 'views/about/about.html',
+                	controller: 'AboutController',
+                	controllerAs: 'about'
                 })
                 .state('board', {
                 	url: '/board.html',

@@ -3,6 +3,7 @@
 	<head>
 		<title>Website</title>
 		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css"></link>
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css"></link>
 		<link rel="stylesheet" href="css/main.css"></link>
@@ -41,14 +42,13 @@
 		</nav>
 		<div ui-view class="container--body"></div>
 		
-		<!-- <script src="js/libs/angular.min.js"></script>-->
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
 		<script src="js/libs/angular-ui-router.min.js"></script>
 		<script src="js/libs/ui-bootstrap-tpls-2.1.1.min.js"></script>
 		
 		<script src="index.module.js"></script>
 		<script src="index.route.js"></script>
 		
+		<script src="views/about/about.controller.js"></script>
 		<script src="views/home/home.controller.js"></script>
 		<script src="views/members/members.controller.js"></script>
 	</body>
