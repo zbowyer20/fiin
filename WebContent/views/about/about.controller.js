@@ -47,6 +47,10 @@
 		];
 		
 		$scope.open = null;
+		
+		$scope.toggleQuestion = function(id) {
+			$scope.open = $scope.open == id ? null : id;
+		}
 	}
 	
 })();

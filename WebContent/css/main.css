@@ -9,6 +9,9 @@ body {
     background-image: none;
     background: white; }
 
+.img-responsive {
+  min-height: 100px; }
+
 .img__logo {
   width: 200px;
   margin: 10px auto;
@@ -18,11 +21,11 @@ body {
   width: 100%; }
 
 .nav {
-  height: 170px; }
+  height: 100px; }
   .nav .navbar-toggle .icon-bar {
-    width: 165px;
-    margin-bottom: 30px;
-    height: 15px; }
+    width: 98px;
+    margin-bottom: 13px;
+    height: 8px; }
   @media screen and (min-width: 1025px) {
     .nav {
       height: 100vh;
@@ -48,7 +51,7 @@ body {
     padding: 0; }
   .menu__mobile .navbar {
     position: absolute;
-    top: 170px;
+    top: 100px;
     z-index: 1;
     width: 100%; }
     .menu__mobile .navbar .link__nav {
@@ -126,7 +129,7 @@ body {
   bottom: 0; }
 
 .text__header--title {
-  font-size: 48px;
+  font-size: 36px;
   margin: 20px;
   color: white; }
   @media (min-width: 1025px) {
@@ -156,17 +159,21 @@ body {
       font-size: 24px; } }
 
 .text__paragraph {
-  font-size: 22px;
+  font-size: 16px;
   margin: 25px 0;
   line-height: 26px;
   letter-spacing: 1px; }
   @media (min-width: 1025px) {
     .text__paragraph {
-      margin: 10px 0;
-      font-size: 16px; } }
+      margin: 10px 0; } }
 
 .text--emphasis {
   font-weight: bold; }
+
+.panel-heading:hover {
+  cursor: pointer; }
+  .panel-heading:hover h4 {
+    text-decoration: underline; }
 
 .panel-title a span {
   font-size: 26px !important;

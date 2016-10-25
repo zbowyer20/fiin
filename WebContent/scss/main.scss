@@ -19,6 +19,10 @@ body {
 	}
 }
 
+.img-responsive {
+	min-height: 100px;
+}
+
 .img__logo {
 	width: 200px;
 	margin: 10px auto;
@@ -30,12 +34,12 @@ body {
 }
 
 .nav {
-	height: 170px;
+	height: 100px;
 	
 	.navbar-toggle .icon-bar {
-		width: 165px;
-		margin-bottom: 30px;
-		height: 15px;
+		width: 98px;
+		margin-bottom: 13px;
+		height: 8px;
 	}
 	
 	@media screen and (min-width: 1025px) {
@@ -70,7 +74,7 @@ body {
 	
 	.navbar {
 		position: absolute;
-		top: 170px;
+		top: 100px;
 		z-index: 1;
 		width: 100%;
 		
@@ -172,7 +176,7 @@ body {
 }
 
 .text__header--title {
-	font-size: 48px;
+	font-size: 36px;
 	margin: 20px;
 	color: white;
 	
@@ -210,19 +214,25 @@ body {
 }
 
 .text__paragraph {
-	font-size: 22px;
+	font-size: 16px;
 	margin: 25px 0;
 	line-height: 26px;
 	letter-spacing: 1px;
 	
 	@media (min-width: 1025px) {
 		margin: 10px 0;
-		font-size: 16px;
 	}
 }
 
 .text--emphasis {
 	font-weight: bold;
+}
+
+.panel-heading:hover {
+	cursor: pointer;
+	h4 {
+		text-decoration: underline;
+	}
 }
 
 .panel-title a span {

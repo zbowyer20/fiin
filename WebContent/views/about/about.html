@@ -9,8 +9,8 @@
 	<p class="text__paragraph">The Food Industry Intelligence Network (FIIN) is a group of food businesses (‘members’) including retailers, manufacturers and food services companies. In joining the FIIN, members agree to submit information to the FIIN administrator on the authenticity testing they have carried out over a set period of time. The information is anonymised by the administrator and used to compile a report that is circulated to FIIN members.</p>
 	
 	<div class="panel panel-default" ng-repeat="question in questions">
-		<div class="panel-heading">
-			<h4 class="panel-title" ng-click="open = open == question.id ? null : question.id">
+		<div class="panel-heading" ng-click="toggleQuestion(question.id)">
+			<h4 class="panel-title">
 				{{question.question}}
 			</h4>
 		</div>
