@@ -1,13 +1,9 @@
 $nav__width: 210px;
+$nav__height--mobile: 100px;
 $members-per-line--mobile: 3;
 $members-per-line--tablet: 4;
 $members-per-line--desktop: 6;
 $theme__dark-colour: #4a3f37;
-
-html {
-	-webkit-text-size-adjust: auto;
-	-ms-text-size-adjust: auto;
-}
 
 body {
 	background-image: url("../images/background.png");
@@ -38,7 +34,7 @@ body {
 }
 
 .nav {
-	height: 100px;
+	height: $nav__height--mobile;
 	
 	.navbar-toggle .icon-bar {
 		width: 98px;
@@ -78,7 +74,7 @@ body {
 	
 	.navbar {
 		position: absolute;
-		top: 100px;
+		top: $nav__height--mobile;
 		z-index: 1;
 		width: 100%;
 		
@@ -128,7 +124,7 @@ body {
 	}
 }
 
-.container--body {
+.container__body {
 	display: block;
 	
 	@media (min-width: 1025px) {
@@ -164,15 +160,6 @@ body {
 	position: relative;
 }
 
-.wallpaper {
-	width: 100%;
-	min-height: 300px;
-}
-
-.wallpaper__home {
-	background:url('../images/farm.jpg') center center no-repeat;
-}
-
 .header {
 	position: absolute;
 	left: 0;
@@ -195,17 +182,6 @@ body {
 
 .section__members {
 	margin: 0 15px;
-}
-
-.section__header {
-	display: block;
-	width: 66%;
-	border-bottom: 2px solid black;
-}
-
-.text__section-header {
-	color: $theme__dark-colour;
-	margin-bottom: 2px;
 }
 
 .text__subheader {

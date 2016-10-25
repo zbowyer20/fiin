@@ -32,9 +32,7 @@
                 })
                 .state('contact', {
                 	url: '/contact',
-                	templateUrl: 'views/contact/contact.html',
-                	controller: 'ContactController',
-                	controllerAs: 'contact'
+                	templateUrl: 'views/contact/contact.html'
                 })
         $urlRouterProvider.otherwise('/home');
     }
