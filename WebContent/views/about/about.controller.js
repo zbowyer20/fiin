@@ -17,12 +17,12 @@
 		   {
 			   id: 2,
 			   question: "How is the information submitted by companies anonymised?",
-			   answer: "The legal firm, Eversheds LLP, carries out administration of the FIIN. Eversheds anonymise the information received from FIIN members and compile it into a report."
+			   answer: "The legal firm, Eversheds LLP, carries out administration of the FIIN. Eversheds anonymise the information received from FIIN members and compile it into a report. From Jan 2017 Campden BRI will take over administration of FIIN although data will still be submitted to and anonymised by Eversheds."
 		   },
 		   {
 			   id: 3,
 			   question: "How is membership determined?",
-			   answer: "The concept of the Food Industry Intelligence Network arose as a response by an industry workshop to address the recommendations of the Elliot report. The founding members of the FIIN agreed a model for membership. Companies wishing to join the FIIN can contact the FIIN administrator or any of the Board members. There is a membership fee that is scaled to the size of the business and all members are expected to contribute data into the Network."
+			   answer: "The concept of the Food Industry Intelligence Network arose as a response by an industry workshop to address the recommendations of the Elliott report. The founding members of the FIIN agreed a model for membership. Companies wishing to join the FIIN can contact the FIIN administrator or any of the Board members. There is a membership fee that is scaled to the size of the business and all members are expected to contribute data into the Network."
 		   },
 		   {
 			   id: 4,
@@ -32,7 +32,7 @@
 		   {
 			   id: 5,
 			   question: "How is the FIIN governed?",
-			   answer: "FIIN has a governance board consisting of representatives of each sector of the food industry – retail, manufacture (brand and own label), food service – and the administrator. Professor Chris Elliot of Queen’s University, Belfast is a non-executive independent adviser."
+			   answer: "FIIN has a governance board consisting of representatives of each sector of the food industry - retail, manufacture (brand and own label), food service - and the administrator. Professor Chris Elliott of Queen's University, Belfast is a non-executive independent adviser."
 		   },
 		   {
 			   id: 6,
